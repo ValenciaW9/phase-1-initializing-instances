@@ -32,3 +32,7 @@ class Dinner {
 const breakfast = new Breakfast('eggs');
 const lunch = new Lunch('side salad');
 const dinner = new Dinner('balsamic salad');
+
+console.log(breakfast);
+console.log(lunch);
+console.log(dinner);
