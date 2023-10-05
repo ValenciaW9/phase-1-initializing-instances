@@ -12,7 +12,10 @@ describe("breakfast", () => {
     expect(bfast.drink).to.equal("juice");
   });
 });
-
+it('breakfastcreates a new breakfast with the correct parameters', () => {
+  const breakfast = new Breakfast('eggs');
+  assert.strictEqual(breakfast.breakfast, 'eggs');
+});
 describe("lunch", () => {
   it("has a class of lunch", () => {
     expect(new Lunch()).to.be.an.instanceof(Lunch);
