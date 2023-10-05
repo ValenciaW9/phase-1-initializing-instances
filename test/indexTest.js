@@ -4,17 +4,15 @@ const assert = require('assert');
 
 describe("breakfast", () => {
   it("has a class of breakfast", () => {
+    console.log(new Breakfast());
     expect(new Breakfast()).to.be.an.instanceof(Breakfast);
   });
   it("creates a new breakfast with the correct parameters", () => {
     const bfast = new Breakfast("eggs", "juice");
-    expect(bfast.food).to.equal("eggs");
+    console.log(bfast);
+    expect(bfast.breakfast).to.equal("eggs");
     expect(bfast.drink).to.equal("juice");
   });
-});
-it('breakfastcreates a new breakfast with the correct parameters', () => {
-  const breakfast = new Breakfast('eggs');
-  assert.strictEqual(breakfast.breakfast, 'eggs');
 });
 describe("lunch", () => {
   it("has a class of lunch", () => {
