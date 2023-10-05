@@ -1,6 +1,6 @@
 require ( './helpers.js' );
 
-const { expect } = require("chai");
+const assert = require('assert');
 
 describe("breakfast", () => {
   it("has a class of breakfast", () => {
