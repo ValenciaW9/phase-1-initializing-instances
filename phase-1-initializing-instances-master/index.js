@@ -12,26 +12,28 @@ bigFluffyDog1; // => Dog { name: 'Buzz', breed: 'greatPyrenees' }
 bigFluffyDog2; // => Dog { name:  'Woody' , breed: 'labrador' . }
 
 class Breakfast {
-  constructor(breakfast) {
-    this.breakfast = breakfast;
+  constructor(food, drink) {
+    this.breakfast = food;
+    this.drink = drink;
   }
 }
 
 class Lunch {
-  constructor(lunch) {
-    this.lunch = lunch;
+  constructor(salad, soup, drink) {
+    this.salad = salad;
+    this.soup = soup;
+    this.drink = drink;
   }
 }
 
 class Dinner {
-  constructor(dinner) {
-    this.dinner = dinner;
+  constructor(salad, soup, entree, dessert) {
+    this.salad = salad;
+    this.soup = soup;
+    this.entree = entree;
+    this.dessert = dessert;
   }
 }
-
-const breakfast = new Breakfast('eggs');
-const lunch = new Lunch('side salad');
-const dinner = new Dinner('balsamic salad');
 
 console.log(breakfast);
 console.log(lunch);
