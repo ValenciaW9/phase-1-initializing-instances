@@ -12,19 +12,19 @@ bigFluffyDog1; // => Dog { name: 'Buzz', breed: 'greatPyrenees' }
 bigFluffyDog2; // => Dog { name:  'Woody' , breed: 'labrador' . }
 
 class Breakfast {
-    #amount;
-    constructor(breakfast, lunch, dinner) {
-      this.breakfast = breakfast;
-      this.lunch = lunch;
-      this.dinner = dinner;
-      this.#amount = 0; // Assign a default value if needed
-    }
+  constructor(breakfast) {
+    this.breakfast = breakfast;
   }
-  
-   class Lunch {
-    // Define the Lunch class
-   }
+}
 
-   class Dinner {
-    //Define the Dinner class
-   }
+class Lunch {
+  constructor(lunch) {
+    this.lunch = lunch;
+  }
+}
+
+class Dinner {
+  constructor(dinner) {
+    this.dinner = dinner;
+  }
+}
