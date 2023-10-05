@@ -21,4 +21,10 @@ class Breakfast {
     }
   }
   
+   class Lunch {
+    // Define the Lunch class
+   }
 
+   class Dinner {
+    //Define the Dinner class
+   }
